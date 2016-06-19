@@ -12,15 +12,22 @@ When a user clicks or touches the screen, a QR code will fade in, which links to
 
 ##TL;DR:
   Get Node.js
+  
   Port forward 8080, or any port you want if you modify the server.js file
+  
   Fill public/images folder with images, named 0.jpeg - whatever.jpeg
+  
   Get a QR code with the text "http://yourIP:yourportnumber/qr.jpeg"
+  
   Run server.js with node
   
   Host webapp files on website
   Change IP value in the sketch.js file to your server's IP
+  
   Change the port to whatever port you're using, if you changed it
+  
   ???
+  
   Profit
   
 ##Installation: server
@@ -28,7 +35,9 @@ You will need to install Node.js. Google that and come back. If you want to acce
 
 Once you do that, download the repo to your server machine. 
 The port number I used is 8080. If you want to change it to whatever you want, open the server.js file and do so. Remember that port number. 
+
 If you need to forward the port, do that now. 
+
 Fill the "public/images" folder with your jpeg images, numbered starting with 0. 
 I didn't write anything that generates a QR code automatically, instead I just use one of the thousdands of free QR code generators on the web. Make one that uses the text:
 
@@ -49,6 +58,7 @@ Host the webapp folder in a way that it can be run on a web browser over the int
 In webapp/sketch.js, change the IP address to the server's IP and the port to your port. If you left it alone on the server, leave it alone here.
 
 If everything is hosted correctly, and the server is running, when you open the index.html file on a browser you should see one of the images from your image folder. 
+
 Now if you click the screen (or if you have a fancy touch display, poke it), the image will fade away and reveal a QR code. Scan it with a mobile device and you'll get a "coloring book page" version of the image. Right now it's just a stock sobel-edge filtered image, but **eventually** it will have some further refinement. 
 
 
