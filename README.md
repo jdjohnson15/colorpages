@@ -8,7 +8,7 @@ The web app, which runs best if embedded on a webpage (I use my neocities page),
 When a user clicks or touches the screen, a QR code will fade in, which links to a sobel-edge rendering of the image, stored on the server machine. The user can scan the QR code with a mobile device, and the device will be directed to the image file, where they may download it. 
 
 
-###warning: if you want to set this up to work outside of a local network, you may open up your server machine to security breaches. Protecting your machine from bad guys is way beyond the scope of this silly app, so if you 
+###warning: if you want to set this up to work outside of a local network, you may open up your server machine to security breaches. Protecting your machine from bad guys is way beyond the scope of this silly app, so if you are unsure how to do so and stil like the basic functionality of this program, run it locally and not publicly.  
 
 ##TL;DR:
   Get Node.js
